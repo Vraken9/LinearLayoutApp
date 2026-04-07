@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFDFB"
+    android:padding="32dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#2E3C40"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masuk untuk melihat koleksi bunga hari ini"
+        android:textSize="15sp"
+        android:textColor="#7A8D91"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Alamat Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#B0BEC5"
+        android:textColor="#2E3C40"
+        android:background="@drawable/bg_rounded_input"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_rounded_input"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="Kata Sandi"
+            android:inputType="textPassword"
+            android:textColorHint="#B0BEC5"
+            android:textColor="#2E3C40"
+            android:background="@null"
+            android:paddingStart="20dp"
+            android:paddingEnd="16dp" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_menu_view"
+            android:contentDescription="Tampilkan Sandi"
+            android:layout_marginEnd="4dp"
+            android:alpha="0.4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="32dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingat Sandi"
+            android:textColor="#7A8D91"
+            android:textSize="14sp"
+            android:buttonTint="#7CB342"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lupa Sandi?"
+            android:textColor="#7CB342"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="MASUK"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_rounded_button"
+        android:layout_marginBottom="24dp"
+        android:stateListAnimator="@null"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#E0E5E9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ATAU "
+            android:textColor="#B0BEC5"
+            android:textSize="13sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#E0E5E9"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Masuk dengan Google"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#546E7A"
+        android:background="@drawable/bg_rounded_google"
+        android:drawableStart="@drawable/ic_google"
+        android:paddingStart="24dp"
+        android:paddingEnd="48dp"
+        android:layout_marginBottom="32dp"
+        android:stateListAnimator="@null"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun? "
+            android:textColor="#7A8D91"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:textColor="#7CB342"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</LinearLayout>
